@@ -5,6 +5,7 @@ font-family: Palatino, 'Palatino Linotype', serif;
 .try {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   background-image: url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg");
+  background-size: cover;
 }
 .try a {
 	color: #00FFAA;
