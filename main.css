@@ -3,6 +3,9 @@ font-family: Palatino, 'Palatino Linotype', serif;
   color: rgb(46,105,163);
 }
 .try {
-  font-size: 32px;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+.try a {
+	color: #00FFAA;
+  font-size: 1.25em;
 }
