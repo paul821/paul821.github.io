@@ -9,5 +9,9 @@ font-family: Palatino, 'Palatino Linotype', serif;
 }
 .try a {
 	color: #00FFAA;
-  font-size: 1.25em;
+  font-size: 1.25rem;
+}
+
+#beta {
+	font-size:0.75rem;
 }
