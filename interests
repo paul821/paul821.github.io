@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <title>Interests | Paul Kim</title>
+  <meta charset = "utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+<h2> Interests. </h2>
+I do a lot of stuff outside of productive work.
+<p>
+Taking photos
+  <br>
+Writing songs
+  <br>
+Baseball lover
+  <br>
+Wrestling fan
+  <br>
+Language learner
+  </p>
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="95%">
+  
+</body>
+</html> 
