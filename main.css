@@ -34,16 +34,12 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: gray;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
 .jumbotron p {
-  font-size: 60px;
-  font-weight: 700;
   margin: 0 0 20px;
-  color: #fff;
 }
 
 section .row img {
