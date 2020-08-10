@@ -1,20 +1,52 @@
-h1 {
-font-family: 'Lato', sans-serif;
-  color: rgb(46,105,163);
+body {
+	font-weight: 300;
 }
+
+header {
+	padding: 20px;
+	
+}
+
+header .row,
+footer .row {
+	display: flex;
+	align-items: center;
+}
+
+header h1 {
+	color: rgb(46,105,163);
+	font-weight: 700;
+}
+
+header nav {
+	display: flex;
+  	justify-content: flex-end;
+}
+
+header p {
+  	padding: 20px;
+  	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
 .try {
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   background-image: url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg");
   background-size: cover;
 }
 .try a {
-	color: #00FFAA;
+color: #00FFAA;
   font-size: 1.25rem;
 }
 
 #beta {
 	font-size:0.75rem;
 }
-body {
-	font-family: 'Lato', sans-serif;
-}
+
