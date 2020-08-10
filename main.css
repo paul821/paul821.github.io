@@ -26,9 +26,9 @@ header nav {
 .jumbotron {
   display: flex;
   align-items: center;
-  color: gray;
+  color: khaki;
   height: 500px;
-margin: 20px;
+padding: 20px;
 }
 
 .jumbotron p {
@@ -42,25 +42,6 @@ section .row img {
 }
 
 .col-sm-6 {
-  margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
   margin: 0 0 30px;
 }
 
