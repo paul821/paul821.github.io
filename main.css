@@ -23,6 +23,11 @@ header nav {
   	justify-content: flex-end;
 }
 
+
+header p {
+  padding: 0 20px;
+}
+
 .jumbotron {
   display: flex;
   align-items: center;
