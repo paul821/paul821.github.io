@@ -45,6 +45,7 @@ section .row img {
   margin: 0 0 30px;
   width: 100%;
   padding: 20px;
+  max-height: 100%;
 }
 
 .col-sm-6 {
