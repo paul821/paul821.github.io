@@ -44,10 +44,12 @@ padding: 20px;
 section .row img {
   margin: 0 0 30px;
   width: 100%;
+  padding: 20px;
 }
 
 .col-sm-6 {
   margin: 0 0 30px;
+  padding: 20px;
 }
 
 footer {
