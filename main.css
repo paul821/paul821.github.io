@@ -76,18 +76,3 @@ footer li img {
 
 
 
-
-
-.try {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg");
-  background-size: cover;
-}
-.try a {
-color: #00FFAA;
-  font-size: 1.25rem;
-}
-
-#beta {
-	font-size:0.75rem;
-}
-
