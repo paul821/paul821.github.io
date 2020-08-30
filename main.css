@@ -43,12 +43,7 @@ padding: 20px;
 	
 }
 
-section .row {
-	height: 90%
-	overflow: hidden;
-}
-
-section .row img {
+.jumbotron img {
   max-width: 100%;
   height: auto;
   margin: 20px;
