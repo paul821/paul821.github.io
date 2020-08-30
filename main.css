@@ -43,6 +43,11 @@ padding: 20px;
 	
 }
 
+section .row {
+	height: 100%
+		overflow: hidden;
+}
+
 section .row img {
   max-width: 100%;
   height: auto;
