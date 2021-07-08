@@ -1,46 +1,48 @@
+
 body {
-	font-weight: 300;
-	padding: 20px;
+  font-weight: 300;
+  padding: 20px;
 }
 
 header {
-	padding: 20px;
-	
+  padding: 20px;
+  position: fixed;
+  height: 200px;
+  line-height: 200px;
 }
 
 header .row,
 footer .row {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header h1 {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 header nav {
-	display: flex;
-  	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 
 header p {
   padding: 0 20px;
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .jumbotron {
   display: flex;
   align-items: center;
-  color: purple;
+  background-color: purple;
+  background-size: cover;
   height: 500px;
-padding: 20px;
 }
 
 .jumbotron .container p {
   padding: 20px;
-	font-size: 1.5rem;
-	
+  font-size: 1.5rem;
 }
 
 .jumbotron .container img {
@@ -73,8 +75,3 @@ footer li img {
   width: 32px;
   height: 32px;
 }
-
-
-
-
-
