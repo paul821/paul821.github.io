@@ -5,6 +5,7 @@ body {
 
 header {
   position: fixed;
+  background-color: null;
 }
 
 header .row,
@@ -24,7 +25,7 @@ header nav {
 
 
 header p {
-  font-size: 1rem;
+
 }
 
 .maincontent {
@@ -41,12 +42,12 @@ header p {
 
 .container-fluid img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   display: block;
 }
 
 footer {
-  font-size: 0.75rem;
+
 }
 
 footer .col-sm-8 {
