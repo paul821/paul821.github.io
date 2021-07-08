@@ -5,7 +5,7 @@ body {
 
 header {
   position: fixed;
-  background-color: null;
+  background-color: white;
 }
 
 header .row,
@@ -47,7 +47,7 @@ header p {
 }
 
 footer {
-
+  background-color: white;
 }
 
 footer .col-sm-8 {
