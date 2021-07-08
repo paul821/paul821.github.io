@@ -6,7 +6,7 @@ body {
 header {
   position: fixed;
   background-color: white;
-  margin: 20px;
+  padding: 20px;
 }
 
 header .row,
