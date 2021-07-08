@@ -32,7 +32,7 @@ header p {
   font-size: 1.5rem;
 }
 
-.jumbotron {
+.container-fluid {
   display: flex;
   align-items: center;
   background-color: purple;
@@ -40,21 +40,15 @@ header p {
   height: 500px;
 }
 
-.jumbotron .container p {
+.container-fluid p {
   padding: 20px;
   font-size: 1.5rem;
 }
 
-.jumbotron .container img {
+.container-fluid img {
   max-width: 100%;
   height: auto;
-  margin: 20px;
   display: block;
-}
-
-.col-sm-6 {
-  margin: 0 0 30px;
-  padding: 20px;
 }
 
 footer {
