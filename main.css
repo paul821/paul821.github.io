@@ -1,11 +1,9 @@
 
 body {
   font-weight: 300;
-  padding: 20px;
 }
 
 header {
-  padding: 20px;
   position: fixed;
   height: 200px;
   line-height: 200px;
@@ -28,8 +26,7 @@ header nav {
 
 
 header p {
-  padding: 0 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .container-fluid {
@@ -37,11 +34,9 @@ header p {
   align-items: center;
   background-color: purple;
   background-size: cover;
-  height: 500px;
 }
 
 .container-fluid p {
-  padding: 20px;
   font-size: 1.5rem;
 }
 
@@ -53,7 +48,6 @@ header p {
 
 footer {
   font-size: 0.75rem;
-  padding: 20px 0;
 }
 
 footer .col-sm-8 {
