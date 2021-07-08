@@ -2,6 +2,11 @@ body {
   font-weight: 300;
 }
 
+.navbar{
+  position: fixed;
+}
+
+
 .maincontent {
   display: flex;
   align-items: center;
