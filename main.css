@@ -27,11 +27,12 @@ header p {
   font-size: 1rem;
 }
 
-.container-fluid {
+.maincontent {
   display: flex;
   align-items: center;
   background-color: purple;
   background-size: cover;
+  padding: 20px;
 }
 
 .container-fluid p {
