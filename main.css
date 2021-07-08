@@ -2,34 +2,6 @@ body {
   font-weight: 300;
 }
 
-header {
-  position: fixed;
-  background-color: white;
-  padding: 20px;
-  width: 100%;
-}
-
-header .row,
-footer .row {
-  display: flex;
-  align-items: center;
-}
-
-header h6 {
-  font-weight: 700;
-  display: inline;
-}
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-header p {
-
-}
-
 .maincontent {
   display: flex;
   align-items: center;
