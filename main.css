@@ -15,8 +15,9 @@ footer .row {
   align-items: center;
 }
 
-header h1 {
+header h6 {
   font-weight: 700;
+  display: inline;
 }
 
 header nav {
@@ -26,7 +27,7 @@ header nav {
 
 
 header p {
-display: inline;
+
 }
 
 .maincontent {
