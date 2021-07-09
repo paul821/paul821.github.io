@@ -3,7 +3,6 @@ body {
   font-size: 1rem;
   margin: 1rem;
   padding: 1rem;
-  padding-top: 5rem;
 }
 
 .navbar{
@@ -27,6 +26,7 @@ body {
   background-color: lightskyblue;
   background-size: cover;
   padding: 2rem;
+  padding-top: 5rem;
   height: 100rem;
 }
 
