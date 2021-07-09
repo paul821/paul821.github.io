@@ -10,9 +10,10 @@ body {
   height: 5rem;
   line-height: 5rem;
   font-family: Heebo;
-  font-color: blue;
+  color: blue;
   padding: 2rem;
   font-weight: bold;
+  margin: null;
 }
 
 .navbarlink{
