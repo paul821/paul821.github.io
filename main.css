@@ -9,9 +9,13 @@ body {
   height: 5rem;
   line-height: 5rem;
   font-family: Heebo;
+  font-color: blue;
   padding: 2rem;
 }
 
+.navbarlink{
+  font-size: 2rem;
+}
 
 .maincontent {
   display: flex;
