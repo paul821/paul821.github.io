@@ -1,14 +1,15 @@
 body {
   font-weight: 300;
-  font-size: 10px;
-  margin: 10%;
+  font-size: 1rem;
+  margin: 10px;
 }
 
 .navbar{
   position: fixed;
-  height: 12.5%
-  line-height: 12.5%
+  height: 5rem;
+  line-height: 5rem;
   font-family: Heebo;
+  padding: 2rem;
 }
 
 
@@ -17,8 +18,8 @@ body {
   align-items: center;
   background-color: purple;
   background-size: cover;
-  padding: 20px;
-  height: 75%;
+  padding: 2rem;
+  height: 100rem;
 }
 
 .container-fluid p {
@@ -27,13 +28,13 @@ body {
 
 .container-fluid img {
   display: block;
-  margin: 20px;
+  margin: 2rem;
 }
 
 footer {
   background-color: white;
-  height: 12.5%
-  line-height: 12.5%
+  height: 5rem;
+  line-height: 5rem;
 }
 
 footer .col-sm-4 {
@@ -46,6 +47,6 @@ footer ul {
 }
 
 footer li img {
-  width: 32px;
-  height: 32px;
+  width: .5rem;
+  height: .5rem;
 }
