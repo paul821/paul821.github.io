@@ -24,7 +24,7 @@ body {
 .maincontent {
   display: flex;
   align-items: center;
-  background-color: purple;
+  background-color: lightskyblue;
   background-size: cover;
   padding: 2rem;
   height: 100rem;
