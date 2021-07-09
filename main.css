@@ -24,8 +24,9 @@ body {
 
 .container-fluid img {
   max-width: 100%;
-  height: 50%;
+  max-height: 20%;
   display: block;
+  margin: 20px;
 }
 
 footer {
@@ -34,9 +35,9 @@ footer {
   line-height: 100px;
 }
 
-footer .col-sm-6 {
+footer .col-sm-4 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex;
 }
 
 footer ul {
