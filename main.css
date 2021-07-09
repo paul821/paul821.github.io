@@ -1,5 +1,6 @@
 body {
   font-weight: 300;
+  font-size: 10px;
 }
 
 .navbar{
@@ -19,7 +20,7 @@ body {
 }
 
 .container-fluid p {
-  font-size: 0.5rem;
+
 }
 
 .container-fluid img {
