@@ -37,7 +37,7 @@ footer {
 
 footer .col-sm-4 {
   display: flex;
-  justify-content: flex;
+  justify-content: center;
 }
 
 footer ul {
