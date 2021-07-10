@@ -29,6 +29,10 @@ body {
 }
 
 .btn{
+  align-items: stretch;
+  height: 25%;
+  border-radius: 11%;
+  font-size: 44vw;
 
 }
 
