@@ -29,12 +29,13 @@ body {
   background-size: cover;
   padding: 2rem;
   padding-top: 5rem;
+  height: 100vh;
 }
 
 .btn{
   align-items: stretch;
   border-radius: 11%;
-  font-size: 12vw
+  font-size: 12vw;
   padding: 1vw;
   margin: 1%;
 
