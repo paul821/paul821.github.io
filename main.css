@@ -28,11 +28,10 @@ body {
 }
 
 .btn{
-    padding: 6rem 12rem;
-    font-size: 16rem;
-    border-radius: 4rem;
-    width:36rem;  
-    float: left;
+    padding: 16% 33%
+    font-size: 44%
+    border-radius: 11%
+    width:100% 
 }
 
 .card-body{
