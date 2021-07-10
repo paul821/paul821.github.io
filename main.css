@@ -1,7 +1,10 @@
+* {
+  font-family: Heebo serif;
+}
+
 body {
   font-weight: 300;
   font-size: 1rem;
-  z-index: 999;
 }
 
 .navbar{
@@ -13,6 +16,7 @@ body {
   padding: 0;
   font-weight: bold;
   margin: 0;
+  z-index: 999;
 }
 
 .navbarlink{
@@ -25,14 +29,15 @@ body {
   background-size: cover;
   padding: 2rem;
   padding-top: 5rem;
-  height: 50rem;
+  height: 100vh;
 }
 
 .btn{
   align-items: stretch;
-  height: 25%;
   border-radius: 11%;
-  font-size: 44vw;
+  font-size: 12vw
+  padding: 1vw;
+  margin: 1%;
 
 }
 
