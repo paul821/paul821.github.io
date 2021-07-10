@@ -19,7 +19,6 @@ body {
 }
 
 .maincontent {
-  display: flex;
   align-items: center;
   background-color: lightskyblue;
   background-size: cover;
