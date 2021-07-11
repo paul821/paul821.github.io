@@ -46,12 +46,8 @@ p {
 
 }
 
-#homepage {
-  display: flex;
-}
-
 .container-fluid img {
-  display: flex;
+  display: block;
   margin: 2rem;
 }
 
@@ -68,6 +64,11 @@ footer .col-sm-4 {
   vertical-align: middle;
   text-decoration: none;
   color: black;
+}
+
+footer .col-sm-4 :not(:first-child) {
+  border-left-color: black;
+  border-left-width: .5rem;
 }
 
 footer ul {
