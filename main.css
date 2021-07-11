@@ -24,6 +24,7 @@ p {
 }
 
 .breadcrumb{
+  height: 5rem;
   line-height: 5rem;
 }
 
