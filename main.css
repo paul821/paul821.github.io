@@ -40,6 +40,8 @@ p {
   font-size: 12vw;
   padding: 1vw;
   margin: 1%;
+  border-width: 1vw;
+  box-shadow: 0.5vw -0.5vw, 0.25vw -0.25vw, .75vw -.75vw,.125vw -.125vw;
 
 }
 
