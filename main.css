@@ -62,6 +62,9 @@ footer .col-sm-4 {
   display: flex;
   justify-content: center;
   vertical-align: middle;
+}
+
+footer .col-sm-4 p {
   text-decoration: none;
   color: black;
 }
