@@ -26,6 +26,7 @@ p {
 .breadcrumb{
   height: 5rem;
   line-height: 5rem;
+  margin-bottom: 0;
 }
 
 .maincontent {
