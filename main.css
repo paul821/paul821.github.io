@@ -23,8 +23,8 @@ p {
   z-index: 999;
 }
 
-.navbarlink{
-  font-size: 2rem;
+.breadcrumb{
+  line-height: 5rem;
 }
 
 .maincontent {
