@@ -59,17 +59,14 @@ footer {
 }
 
 footer .col-sm-4 {
+  display: flex;
   justify-content: center;
-  vertical-align: center;
+  vertical-align: middle;
   text-decoration: none;
   color: black;
 }
 
 footer ul {
   list-style: none;
-}
-
-footer li img {
-  width: .5rem;
-  height: .5rem;
+  flex-direction: column;
 }
