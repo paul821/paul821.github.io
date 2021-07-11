@@ -46,8 +46,12 @@ p {
 
 }
 
+#homepage {
+  display: flex;
+}
+
 .container-fluid img {
-  display: block;
+  display: flex;
   margin: 2rem;
 }
 
