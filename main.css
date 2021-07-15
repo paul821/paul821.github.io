@@ -47,10 +47,7 @@ p {
 }
 
 .card {
-  background-color: transparent;
-  flex-direction: row;
-  width: 25vw;
-  object-fit: cover;
+  background-color: white;
 }
 
 footer {
