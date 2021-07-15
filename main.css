@@ -46,6 +46,11 @@ p {
 
 }
 
+.cardstack{
+  display: flex;
+  flex-direction: row;
+}
+
 .card {
   background-color: white;
 }
