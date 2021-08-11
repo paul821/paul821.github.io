@@ -20,6 +20,7 @@ p {
   font-weight: bold;
   margin: 0;
   z-index: 999;
+  background-color: transparent;
 }
 
 .breadcrumb{
@@ -29,7 +30,6 @@ p {
 }
 
 .maincontent {
-  background-color: lightskyblue;
   background-size: cover;
   padding: 2rem;
   padding-top: 5rem;
@@ -56,7 +56,7 @@ p {
 }
 
 footer {
-  background-color: white;
+  background-color: transparent;
   height: 3rem;
   line-height: 3rem;
   margin-bottom: 0;
