@@ -50,17 +50,40 @@
         
         
       <div class="container-fluid">
-  <ul class="rings">
-    <li class="blue"></li>
-    <li class="blue chain"></li>
-    <li class="yellow"></li>
-    <li class="yellow chain"></li>
-    <li class="black"></li>
-    <li class="green"></li>
-    <li class="green chain"></li>
-    <li class="red"></li>
-    <li class="red chain"></li>
-  </ul>        
+  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="504" height="228">
+    <defs>
+        <clipPath id="t">
+            <rect width="504" height="114" />
+        </clipPath>
+    </defs>
+    <g fill="none" stroke-width="12">
+        <g id="u" transform="translate(82,82)" stroke="#0b8ed8">
+            <g id="O">
+                <circle r="72" stroke="#fff" stroke-width="20" />
+                <circle r="72" />
+            </g>
+        </g>
+        <g id="y" transform="translate(167,146)" stroke="#f9a91f">
+            <use xlink:href="#O" />
+        </g>
+        <g id="k" transform="translate(252,82)" stroke="#231f20">
+            <use xlink:href="#O" />
+        </g>
+        <g id="g" transform="translate(337,146)" stroke="#009e59">
+            <use xlink:href="#O" />
+        </g>
+        <g transform="translate(422,82)" stroke="#ee2049">
+            <use xlink:href="#O" />
+        </g>
+        <g clip-path="url(#t)">
+            <use xlink:href="#g" />
+            <use xlink:href="#k" />
+            <use xlink:href="#y" />
+            <use xlink:href="#u" />
+        </g>
+    </g>
+</svg> 
         
         
         
