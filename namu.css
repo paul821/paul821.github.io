@@ -85,7 +85,7 @@ body {
   padding-left:20px;
 }
 
-heading{
+.heading{
   font-size: 1.8em;
   font-weight: 700;
   margin: 1.2em 0 .8em;
@@ -93,7 +93,7 @@ heading{
   padding-bottom: 5px;
 }
 
-heading::before {
+.heading::before {
   float: left;
     font-family: Ionicons;
     font-weight: 400;
@@ -106,7 +106,7 @@ heading::before {
     content: url('https://api.iconify.design/ion/chevron-down-outline.svg');
 }
 
-heading a{
+.heading a{
   color: #0275d8;
 }
 
@@ -145,7 +145,7 @@ heading a{
   padding-left: .5rem;
 }
 
-::marker {
+.bullets::marker {
   unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
     text-transform: none;
