@@ -2,6 +2,8 @@
   font-family: Heebo;
     text-decoration: none;
   padding: .7rem;
+  line-height: 1.5;
+
 }
 
 #headtitle {
@@ -27,7 +29,7 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     font-size: .9rem;
-      
+    
   }
 
   #wiki-macro-toc {
