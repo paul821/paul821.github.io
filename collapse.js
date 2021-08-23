@@ -10,7 +10,7 @@ function collapse(self) {
     }
     self.opacity="1";
     var sign = self.querySelector("::before");
-    sign.content = url("https://api.iconify.design/akar-icons/chevron-down.svg");
+    sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-down.svg")" });
 
     
   } else {
@@ -21,6 +21,6 @@ function collapse(self) {
       i++;
     }
     var sign = self.querySelector("::before");
-    sign.content = url("https://api.iconify.design/akar-icons/chevron-right.svg");
+    sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-right.svg")" });
   }
 }
