@@ -121,7 +121,7 @@ body {
 
 .heading a{
   color: #0275d8;
-  font-size: 1.8em;
+  font-size: 1em !important;
   font-weight: 700;
 }
 
