@@ -127,6 +127,12 @@ body {
   font-weight: 700;
 }
 
+.heading 2a{
+  color: #0275d8;
+  font-size: 1em !important;
+  font-weight: 700;
+}
+
   button {
     background: transparent;
     border: transparent;
