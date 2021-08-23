@@ -1,8 +1,7 @@
 * {
   font-family: Heebo;
-  padding: .7rem;
   line-height: 1.5;
-
+box-sizing: inherit;
 }
 
 a {
@@ -14,7 +13,7 @@ a:hover {
 }
 
 #headtitle {
-    font-size:2.2 rem;
+    font-size:2.2rem;
     font-weight:700;
     margin: 1rem;
 }
@@ -40,24 +39,19 @@ body {
   }
 
 .classtext {
-      display: inline-block;
+    display: inline-block;
     border: 0;
     padding: 0;
     margin: 0;
     font-weight: 400;
     font-size: inherit;
-  margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 .classification span {
   list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
   margin-bottom: 0;
     padding-left: 0;
     margin-top: 0;
@@ -71,6 +65,7 @@ body {
       margin-left: 5px;
       padding: 12px 20px 18px 0;
     font-size: .9rem;
+    display: inline-block;
   }
 
 #toc {
@@ -88,6 +83,10 @@ body {
 #toc-indent {
   padding-left:20px;
   display: block;
+}
+
+#toc span{
+  display:block;
 }
 
 .heading{
