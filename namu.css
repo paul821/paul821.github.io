@@ -95,7 +95,7 @@ body {
   padding-bottom: 5px;
 }
 
-.heading::before {
+.heading:before {
   float: left;
     font-family: Ionicons;
     font-weight: 400;
