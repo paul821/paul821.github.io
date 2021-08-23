@@ -83,6 +83,7 @@ body {
 
 #toc-indent {
   padding-left:20px;
+  display: block;
 }
 
 .heading{
