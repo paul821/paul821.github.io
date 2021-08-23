@@ -9,7 +9,8 @@ function collapse(self) {
       i++;
     }
     self.opacity="1";
-    $(self).attr('\f125','\f123');
+    var sign = self.querySelector("::before");
+    sign.content = url("https://api.iconify.design/akar-icons/chevron-down.svg");
 
     
   } else {
@@ -19,7 +20,7 @@ function collapse(self) {
       cont[i].style.display='none';
       i++;
     }
-    self.opacity="0.5";
-    $(self).attr('\f123','\f125');
+    var sign = self.querySelector("::before");
+    sign.content = url("https://api.iconify.design/akar-icons/chevron-right.svg");
   }
 }
