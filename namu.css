@@ -2,6 +2,7 @@
   font-family: Heebo;
   line-height: 1.5;
 box-sizing: inherit;
+  font-size:.9rem;
 }
 
 a {
@@ -85,12 +86,20 @@ body {
   display: block;
 }
 
-#toc span{
+#toc-indent span{
   display:block;
 }
 
 .heading{
   font-size: 1.8em;
+  font-weight: 700;
+  margin: 1.2em 0 .8em;
+  border-bottom:1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.heading2{
+  font-size: 1.6em;
   font-weight: 700;
   margin: 1.2em 0 .8em;
   border-bottom:1px solid #ccc;
@@ -112,6 +121,8 @@ body {
 
 .heading a{
   color: #0275d8;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 
   button {
