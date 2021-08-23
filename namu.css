@@ -3,6 +3,7 @@
   line-height: 1.5;
 box-sizing: inherit;
   font-size:.9rem;
+  max-width:100%
 }
 
 a {
@@ -22,6 +23,7 @@ a:hover {
 body {
     background-color: white;
     margin: 0;
+  
   }
 
   ul {
@@ -197,7 +199,7 @@ tr{
     border-color: inherit;
 }
 td{
-  padding: 5px 10px;
+  padding: 5px 10px !important;
   display: table-cell;
     vertical-align: inherit;
 }
