@@ -116,7 +116,7 @@ body {
     margin: 0 .5rem 0 .2rem;
     width: .9em;
     color: #666;
-    content: "\f123";
+    content: attr("\f123");
 }
 
 .heading a{
