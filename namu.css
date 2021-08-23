@@ -79,6 +79,7 @@ body {
 #toc-indent:first-of-type {
     margin-top: 12px;
     padding-left: 20px;
+  display:block;
 }
 
 #toc-indent {
