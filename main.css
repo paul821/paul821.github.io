@@ -23,6 +23,11 @@ p {
   background-color: transparent;
 }
 
+.navbar .navbar-toggler {
+      color: rgba(0,0,0,.55);
+    border-color: rgba(0,0,0,.1);
+}
+
 .breadcrumb{
   height: 3rem;
   line-height: 3rem;
