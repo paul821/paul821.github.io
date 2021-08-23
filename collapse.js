@@ -10,7 +10,7 @@ function collapse(self) {
     }
     self.opacity="1";
     $(self).attr('\f125','\f123');
-});
+
     
   } else {
     var cont = document.querySelectorAll('.con');
