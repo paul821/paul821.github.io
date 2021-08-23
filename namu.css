@@ -1,6 +1,7 @@
 * {
   font-family: Heebo;
     text-decoration: none;
+  padding: .7rem;
 }
 
 #headtitle {
@@ -29,7 +30,7 @@ body {
       
   }
 
-  #mainlist {
+  #wiki-macro-toc {
     border: 0.5px #ccc solid;
     width : 350px;
     margin-bottom: 1rem;
