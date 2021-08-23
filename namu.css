@@ -118,7 +118,7 @@ body {
     margin: 0 .5rem 0 .2rem;
     width: .9em;
     color: #666;
-    content: attr("'\f123'");
+    content: url('https://api.iconify.design/akar-icons/chevron-down.svg');
 }
 
 .heading a{
