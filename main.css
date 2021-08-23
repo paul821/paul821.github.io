@@ -54,6 +54,13 @@ p {
   background-color: transparent;
 }
 
+img {
+  vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
   background-color: transparent;
   height: 3rem;
