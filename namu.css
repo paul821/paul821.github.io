@@ -6,6 +6,10 @@
 
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #headtitle {
     font-size:2.2 rem;
     font-weight:700;
@@ -33,7 +37,7 @@ body {
   }
 
   #wiki-macro-toc {
-    border: 0.5px #ccc solid;
+    border: 1px #ccc solid;
     width : 350px;
     margin-bottom: 1rem;
       margin-left: 5px;
@@ -46,11 +50,39 @@ body {
     margin-left: 14px;
 }
 
-#numbertoc {
+#toc-indent:first-of-type {
     margin-top: 12px;
     padding-left: 20px;
 }
 
+#toc-indent {
+  padding-left:20px;
+}
+
+heading{
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 1.2em 0 .8em;
+  border-bottom:1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+heading::before {
+  float: left;
+    font-family: Ionicons;
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 1.8em;
+    text-align: center;
+    margin: 0 .5rem 0 .2rem;
+    width: .9em;
+    color: #666;
+    content: url('https://api.iconify.design/ion/chevron-down-outline.svg');
+}
+
+heading a{
+  color: #0275d8;
+}
 
   button {
     background: transparent;
@@ -61,18 +93,78 @@ body {
     border: transparent;
   }
 
-  .subtitle {
-      margin: 1.2em 0 .8em;
-    font-size: 1.6em;
-    border-bottom: 1px #ccc solid;
-    padding-bottom: 5px;
+  .blockquote {
+    margin: 1em 0;
+    background: #eee;
+    display: table;
+    border: 2px dashed #ccc;
+    border-left: 5px solid #71bc6d;
+    padding: 1em calc(2em + 25px) 1em 1em;
   }
 
-  .memo {
-    display: inline-block;
-    border: 1px gray dashed;
-    border-left : 3px green solid;
-    background-color: #eeeeee;
-    margin: 10px;
-    padding: 10px 40px 10px 20px;
-  }
+.blockquote hr {
+  margin: .5em 0;
+    height: 0;
+    box-sizing: content-box;
+    border: 0;
+    border-top: .0625rem solid #ccc;
+}
+
+.lastpara {
+  margin-bottom: 1rem;
+}
+
+.bullets {
+      margin: .4em 0 .4em 1.5em;
+  padding-left: .5rem;
+}
+
+::marker {
+  unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.tablewrap {
+  margin: 10px auto;
+  display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+  margin: auto;
+  border-collapse: collapse;
+  display: table;
+  text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody{
+      display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr{
+  display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td{
+  padding: 5px 10px;
+  display: table-cell;
+    vertical-align: inherit;
+}
+
+iframe{
+      display: block;
+    max-width: 100%;
+      border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
