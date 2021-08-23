@@ -119,18 +119,6 @@ body {
     content: "\f123";
 }
 
-.heading.special:before {
-  float: left;
-    font-family: Ionicons;
-    font-weight: 400;
-    font-size: .8em;
-    line-height: 1.8em;
-    text-align: center;
-    margin: 0 .5rem 0 .2rem;
-    width: .9em;
-    color: #666;
-    content: "\f125";
-
 .heading a{
   color: #0275d8;
   font-size: 1em !important;
