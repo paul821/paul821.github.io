@@ -1,9 +1,12 @@
 * {
   font-family: Heebo;
-    text-decoration: none;
   padding: .7rem;
   line-height: 1.5;
 
+}
+
+a {
+      text-decoration: none;
 }
 
 a:hover {
