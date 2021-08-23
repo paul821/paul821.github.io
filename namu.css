@@ -1,11 +1,17 @@
+* {
+  font-family: Heebo;
+    text-decoration: none;
+}
+
+h1 {
+    font-size:2.2 rem;
+    font-weight:700;
+    margin: 1rem;
+}
+
 body {
     background-color: white;
     margin: 0;
-  }
-  article {
-    background-color: white;
-    padding-left:20px;
-    font-size: 14px;
   }
 
   ul {
@@ -14,18 +20,34 @@ body {
   }
 
   .classification {
-    border : 0.5px gray solid;
-    border-radius: 5px;
-    padding: 5px;
-    margin : 10px 0;
+    border : 1px #ccc solid;
+    border-radius: 4px;
+    padding: 3px 3px 3px 5px;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-size: .9rem;
+      
   }
 
   #mainlist {
     border: 0.5px gray solid;
     border-radius: 5px;
     width : 350px;
-    margin: 10px;
+    margin-bottom: 1rem;
+      margin-left: 5px;
+      padding: 12px 20px 18px 0;
+    font-size: .9rem;
   }
+
+#toc {
+    font-size: 1.25em;
+    margin-left: 14px;
+}
+
+#numbertoc {
+    margin-top: 12px;
+    padding-left: 20px;
+}
 
 
   button {
@@ -38,9 +60,10 @@ body {
   }
 
   .subtitle {
-    font-size: 1.5em;
-    border-bottom: 1px darkgray solid;
-    padding: 5px;
+      margin: 1.2em 0 .8em;
+    font-size: 1.6em;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 5px;
   }
 
   .memo {
