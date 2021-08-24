@@ -373,6 +373,10 @@ footer {
   margin-bottom: 0;
 }
 
+footer .row {
+  flex-wrap:nowrap;
+}
+
 footer .col-sm-4 {
   display: flex;
   justify-content: center;
