@@ -243,3 +243,11 @@ iframe{
     vertical-align: middle;
     max-width: 100%;
 }
+
+.morewrap{
+  position: relative;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
