@@ -13,6 +13,6 @@ jQuery(function($){
       'opacity': '1'
     });
   }
-    }).next().hide()
+    }).next().show()
     
 })
