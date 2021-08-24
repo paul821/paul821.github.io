@@ -177,14 +177,7 @@ body {
     text-align-last: start !important;
 }
 
-.tablewrap {
-  margin: 10px auto;
-  display: block;
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-.table {
+table {
   margin: auto;
   border-collapse: collapse;
   display: table;
@@ -206,6 +199,7 @@ tr{
 }
 td{
   padding: 5px 10px !important;
+      border: 1px solid #ddd;
   display: table-cell;
     vertical-align: inherit;
 }
@@ -216,4 +210,31 @@ iframe{
       border-style: inset;
     border-color: initial;
     border-image: initial;
+}
+
+.profiletablewrap{
+  display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+.profiletable {
+  margin-left: 20px;
+    margin-bottom: 20px;
+    float: right;
+  width:420px;
+}
+
+@media screen and (max-width: 420px)
+.profiletable {
+  float: none;
+    margin: 10px 0;
+}
+
+.wrap{
+  display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    max-width: 100%;
 }
