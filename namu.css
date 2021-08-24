@@ -11,6 +11,15 @@ box-sizing: inherit;
     background-color: #008275;
 }
 
+.navbar-custom a {
+  color:#eceeef;
+  text-decoration:none;
+}
+
+.breadcrumb{
+  height:1.5;
+}
+
 a {
       text-decoration: none;
 }
@@ -229,7 +238,8 @@ iframe{
 .profiletable {
   margin-left: 20px;
     margin-bottom: 20px;
-  width:420px;
+  width:100%;
+  float:right;
       text-indent: initial;
     border-spacing: 2px;
     border-color: grey;
