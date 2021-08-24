@@ -6,9 +6,18 @@
 body {
   font-weight: 300;
   font-size: 1rem;
-  background-image: url("IMG_3562.JPG");
-  background-size: cover;
-  opacity:50%
+  position:relative;
+}
+
+body::before{
+        background-image: url("IMG_3562.JPG");
+        background-size: cover;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
 }
 
 p {
