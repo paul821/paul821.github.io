@@ -217,6 +217,7 @@ iframe{
     max-width: 100%;
     overflow-x: auto;
     margin: 10px 0;
+  width: 420px;
 }
 
 .profiletable {
@@ -224,6 +225,10 @@ iframe{
     margin-bottom: 20px;
     float: right;
   width:420px;
+      text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+  display: table;
 }
 
 @media screen and (max-width: 420px)
