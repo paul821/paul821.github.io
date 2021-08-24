@@ -6,6 +6,11 @@ box-sizing: inherit;
   max-width:100%
 }
 
+.navbar-custom{
+  color: #eceeef;
+    background-color: #008275;
+}
+
 a {
       text-decoration: none;
 }
