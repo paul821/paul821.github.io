@@ -9,8 +9,8 @@ function collapse(self) {
       i++;
     }
     self.opacity="1";
-    var sign = self.querySelector("::before");
-    sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-down.svg")" });
+    //var sign = self.querySelector("::before");
+    //sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-down.svg")" });
 
     
   } else {
@@ -20,7 +20,7 @@ function collapse(self) {
       cont[i].style.display='none';
       i++;
     }
-    var sign = self.querySelector("::before");
-    sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-right.svg")" });
+    //var sign = self.querySelector("::before");
+    //sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-right.svg")" });
   }
 }
