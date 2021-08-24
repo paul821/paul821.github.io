@@ -11,8 +11,13 @@ box-sizing: inherit;
     background-color: #008275;
 }
 
-.navbar-custom a {
+.navbar-nav .nav-link {
   color:#eceeef;
+  text-decoration:none;
+}
+
+.navbar-brand{
+   color:#eceeef;
   text-decoration:none;
 }
 
