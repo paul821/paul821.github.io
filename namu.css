@@ -111,6 +111,10 @@ body {
   display:block;
 }
 
+.heading:hover, .heading2:hover{
+  cursor:pointer;
+}
+
 .heading{
   font-size: 1.8em;
   font-weight: 700;
