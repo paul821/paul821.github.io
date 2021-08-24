@@ -361,3 +361,31 @@ table img{
   display: inline-block;
     max-width: none;
 }
+
+footer {
+  background-color: transparent;
+  height: 3rem;
+  line-height: 3rem;
+  margin-bottom: 0;
+}
+
+footer .col-sm-4 {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .col-sm-4 :not(:first-child) {
+  border-left-color: black;
+  border-left-width: .5rem;
+}
+
+footer ul {
+  list-style: none;
+  flex-direction: column;
+}
