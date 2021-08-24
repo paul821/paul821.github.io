@@ -117,7 +117,6 @@ body {
 
   #wiki-macro-toc {
     border: 1px #ccc solid;
-    width : 350px;
     margin-bottom: 1rem;
       margin-left: 5px;
       padding: 12px 20px 18px 0;
@@ -275,9 +274,10 @@ iframe{
     max-width: 100%;
     overflow-x: auto;
     margin: 10px 0;
-  width: 420px;
+  width: 400px;
   margin-left: 20px;
     margin-bottom: 20px;
+  margin-top:10px;
   float:right;
 }
 
