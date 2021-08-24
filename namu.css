@@ -165,6 +165,14 @@ body {
   padding-bottom: 5px;
 }
 
+.heading3{
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 1.2em 0 .8em;
+  border-bottom:1px solid #ccc;
+  padding-bottom: 5px;
+}
+
 .heading:before {
   float: left;
     font-family: Ionicons;
@@ -178,13 +186,45 @@ body {
     content: url('https://api.iconify.design/akar-icons/chevron-down.svg');
 }
 
+.heading2:before {
+  float: left;
+    font-family: Ionicons;
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 1.8em;
+    text-align: center;
+    margin: 0 .5rem 0 .2rem;
+    width: .9em;
+    color: #666;
+    content: url('https://api.iconify.design/akar-icons/chevron-down.svg');
+}
+
+.heading3:before {
+  float: left;
+    font-family: Ionicons;
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 0 .5rem 0 .2rem;
+    width: .9em;
+    color: #666;
+    content: url('https://api.iconify.design/akar-icons/chevron-down.svg');
+}
+
 .heading a{
   color: #0275d8;
   font-size: 1em !important;
   font-weight: 700;
 }
 
-.heading 2a{
+.heading2 a{
+  color: #0275d8;
+  font-size: 1em !important;
+  font-weight: 700;
+}
+
+.heading3 a{
   color: #0275d8;
   font-size: 1em !important;
   font-weight: 700;
