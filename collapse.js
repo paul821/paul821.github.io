@@ -1,26 +1,18 @@
-function collapse(self) {
-  //self is heading
-  if (self.opacity = "0.5"){
-    //collapsed already. need to uncollapse
-    var cont = document.querySelectorAll('.con');
-    var i = 0;
-    while (i < cont.length){
-      cont[i].style.display='block';
-      i++;
-    }
-    self.opacity="1";
-    //var sign = self.querySelector("::before");
-    //sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-down.svg")" });
-
-    
-  } else {
-    var cont = document.querySelectorAll('.con');
-    var i = 0;
-    while (i < cont.length){
-      cont[i].style.display='none';
-      i++;
-    }
-    //var sign = self.querySelector("::before");
-    //sign.attr({style: "content:url("api.iconify.design/akar-icons/chevron-right.svg")" });
+jQuery(function($){
+    $('.collapsible').click(function(){
+        $(this).next().stop(true, true).slideToggle();
+        if ($(this).css('opacity')==='1')
+  {
+    $(this).css({
+      'opacity': '0.5',
+    });
   }
-}
+  else //We know the opacity is not 0 lets make it 0.
+  {
+    $(this).css({
+      'opacity': '1'
+    });
+  }
+    }).next().hide()
+    
+})
