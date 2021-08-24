@@ -21,9 +21,6 @@ box-sizing: inherit;
   text-decoration:none;
 }
 
-.breadcrumb{
-  height:1.5;
-}
 
 a {
       text-decoration: none;
@@ -33,7 +30,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#headtitle {
+#headtitle a{
     font-size:2.2rem;
     font-weight:700;
     margin: 1rem;
@@ -241,22 +238,23 @@ iframe{
     overflow-x: auto;
     margin: 10px 0;
   width: 420px;
+  margin-left: 20px;
+    margin-bottom: 20px;
   float:right;
 }
 
 .profiletable {
-  margin-left: 20px;
-    margin-bottom: 20px;
   width:100%;
   float:right;
       text-indent: initial;
     border-spacing: 2px;
     border-color: grey;
   display: table;
+  border-collapse: collapse;
 }
 
 @media screen and (max-width: 420px)
-.profiletable {
+.profiletablewrap {
   float: none;
     margin: 10px 0;
 }
