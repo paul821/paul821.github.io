@@ -1,16 +1,21 @@
 <!doctype html>
   <html>
+    <!--https://codepen.io/sheelah/pen/qYPwBK-->
   <head>
     <title>Interests | Paul Kim</title>
     <meta charset = "utf-8"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel='stylesheet' type='text/css'>
     <!--<link rel="stylesheet" type="text/css" href="main.css"/>-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="spotify.css"/>
   </head>
 
   <body>
-
+<!--
     <header class = "container-fluid" id="navbar">
       <div class = "row">
         <nav class="navbar navbar-expand-lg bg-transparent">
@@ -43,71 +48,88 @@
 
       </div>
     </header>
-
+-->
 
     <div class="maincontent">
       
       <div class="wrapper">
     <aside class="sidebar">
         <ul class="sidebar__main-links">
-            <li>Browse</li>
-            <li>Radio</li>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Your Library</li>
         </ul>
         <ul class="sidebar__music">
-            <h2 class="sidebar__header">Your Music</h2>
-            <li>Your Daily Mix</li>
-            <li>Songs</li>
-            <li>Albums</li>
-            <li>Artists</li>
-            <li>Stations</li>
-            <li>Local Files</li>
+          <h2 class="sidebar__header"><a href="index.html">Chanyeol Paul Kim</a></h2>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="#"><strong>Interests</strong></a></li>
         </ul>
         <ul class="sidebar__playlists">
-            <h2 class="sidebar__header">Playlists</h2>
-            <li>Liked from Radio</li>
-            <li>Indie Pop</li>
-            <li>Roadtrip</li>
-            <li>Release Radar</li>
-            <li>Focus</li>
-            <li>Piano Mood</li>
-            <li>Your Summer Rewind</li>
-            <li>Inspire</li>
-            <li>Alternative Faves</li>
+            <h2 class="sidebar__header">Created Playlists</h2>
+            <li><a href="https://open.spotify.com/playlist/6tkVAg5pKEeOhtfvHZD5jg?si=b3e253068b4a43e0">bike ride, riverside, 7 at night</a></li>
+            <li><a href="https://open.spotify.com/playlist/5IYPCZJD4ptTtmakR4uaPS?si=b91be5b18dad4627">sad korean ballad</a></li>
+            <li><a href="https://open.spotify.com/playlist/2cd8Icsf1CyF8Y81wLtg86?si=b06a8dfa6af1490c">msg wannabe: all songs</a></li>
+            <li><a href="https://open.spotify.com/playlist/5LBv6f5tUWUYCBLPWz7cfU?si=6781110d03dd4b35">m a f i a</a></li>
+            <li><a href="https://open.spotify.com/playlist/5qAHE5qPUZweYzIOUALk7S?si=e4c497d8d0cd4677">the sing slayer</a></li>
+            <li><a href="https://open.spotify.com/playlist/7JMNPKQQtkBmfiWeOolR6x?si=6c58d159520b436d">k college hiphop</a></li>
         </ul>
     </aside>
     <main>
         <header class="main__header">
-            <h1>Browse</h1>
+            <h1>Interests</h1>
         </header>
-        <nav class="main__nav"><a class="link is-active" href="#">Overview</a><a class="link" href="#">Charts</a><a class="link" href="#">Genres and Moods</a><a class="link" href="#">New Releases</a><a class="link" href="#">Discover</a><a class="link" href="#">More</a></nav>
+        <nav class="main__nav">
+          <a class="link is-active" href="#">Overview</a>
+          <a class="link" href="https://www.youtube.com/results?search_query=melon+chart">Charts</a>
+          <a class="link" href="https://www.youtube.com/channel/UCSZXwdBppzhYpcqf69WNOIg">Genres and Moods</a>
+          <a class="link" href="https://www.youtube.com/watch?v=v9ZZYKUvQfM">New Releases</a>
+          <a class="link" href="https://www.youtube.com/playlist?list=PL3BC17E78DEA9CB1E">Discover</a>
+          <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Easter egg</a></nav>
         <section class="main__playlists">
             <h2>Featured Lists</h2>
             <ul class="music__list">
-                <li class="music__list-item"><span class="song__title">Just Go</span><span class="song__creator">The Goes</span></li>
-                <li class="music__list-item"><span class="song__title">Fanboy</span><span class="song__creator">Young Joe</span></li>
-                <li class="music__list-item"><span class="song__title">Fly</span><span class="song__creator">20 Cent</span></li>
-                <li class="music__list-item"><span class="song__title">Jill</span><span class="song__creator">Don't Even</span></li>
-                <li class="music__list-item"><span class="song__title">Home and Country</span><span class="song__creator">Wandering Ants</span></li>
-                <li class="music__list-item"><span class="song__title">Victor Knows</span><span class="song__creator">The Creatives</span></li>
-                <li class="music__list-item"><span class="song__title">Roadtrippin'</span><span class="song__creator">The Wayfarers</span></li>
-                <li class="music__list-item"><span class="song__title">However You Want</span><span class="song__creator">The Shilts</span></li>
-                <li class="music__list-item"><span class="song__title">Just Say Yes</span><span class="song__creator">The Tweeters</span></li>
-                <li class="music__list-item"><span class="song__title">New York</span><span class="song__creator">V2</span></li>
-                <li class="music__list-item"><span class="song__title">Hallowed Grounds</span><span class="song__creator">Paper and Pencil</span></li>
-                <li class="music__list-item"><span class="song__title">Fanboy</span><span class="song__creator">Young Joe</span></li>
-                <li class="music__list-item"><span class="song__title">Roadtrippin'</span><span class="song__creator">The Wayfarers</span></li>
-                <li class="music__list-item"><span class="song__title">Victor Knows</span><span class="song__creator">The Creatives</span></li>
-                <li class="music__list-item"><span class="song__title">Home and Country</span><span class="song__creator">Wandering Ants</span></li>
-                <li class="music__list-item"><span class="song__title">Hallowed Grounds</span><span class="song__creator">Paper and Pencil</span></li>
-                <li class="music__list-item"><span class="song__title">Springtime Forever</span><span class="song__creator">Near and Far</span></li>
-                <li class="music__list-item"><span class="song__title">Love Song</span><span class="song__creator">The Sprints</span></li>
-                <li class="music__list-item"><span class="song__title">Say It Ain't So</span><span class="song__creator">The Three Beards</span></li>
-                <li class="music__list-item"><span class="song__title">She Goes</span><span class="song__creator">The Kilts</span></li>
+                <li class="music__list-item">
+                  <span class="song__title">Beautiful things don't ask for attention.</span>
+                  <span class="song__creator">Sean Penn</span>
+                  <span class="song__creator">The Secret Life of Walter Mitty</span>
+                </li>
+                <li class="music__list-item">
+                  <span class="song__title">Jealousy, turning saints into the sea</span>
+                  <span class="song__creator">The Killers</span>
+                  <span class="song__creator">Mr. Brightside</span>
+                </li>
+                <li class="music__list-item">
+                  <span class="song__title">The greatest ideas are the simplest.</span>
+                  <span class="song__creator">William Golding</span>
+                  <span class="song__creator">Lord of the Flies</span>
+                </li>
+                <li class="music__list-item">
+                  <span class="song__title">A life is not important except in the impact it has on other lives.</span>
+                  <span class="song__creator">Jackie Robinson</span>
+                  <span class="song__creator">42</span>
+                </li>
+                <li class="music__list-item">
+                  <span class="song__title">It’s about the 14 years it took me to go from undesirable to undeniable.</span>
+                  <span class="song__creator">Cody Rhodes</span>
+                  <span class="song__creator">The modern "Hard times" promo</span>
+                </li>
+                <li class="music__list-item">
+                  <span class="song__title">The limits of my language mean the limits of my world.</span>
+                  <span class="song__creator">Ludwig Wittgenstein</span>
+                  <span class="song__creator">Tractatus Logico-Philosophicus</span>
+                </li>
+                <li class="music__list-item">
+                  <span class="song__title">Life cannot be planned.</span>
+                  <span class="song__creator">Ki-taek</span>
+                  <span class="song__creator">Parasite</span>
+                </li>
             </ul>
         </section>
     </main>
     <aside class="activity">
-        <h2>Friend Activity</h2><button class="button">Find Friends</button>
+        <h2>Layout from</h2><button class="button"><a href="https://codepen.io/sheelah/pen/qYPwBK">Sheelah Brennan</a></button>
     </aside>
 </div>
       
@@ -377,10 +399,19 @@
   </body>
     
 <footer class="footer">
-    <div class="now-playing"><img class="album__image" src="https://images.unsplash.com/photo-1515233451477-90d9cd4d57ed?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=cade564aeff757d648625aaac06e837c" />
-        <div class="album__info"><span class="album__title">Stay There Now</span><span class="album__musician">The Harmonics</span></div>
+    <div class="now-playing">
+      <img class="album__image" src="https://images.unsplash.com/photo-1515233451477-90d9cd4d57ed?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=cade564aeff757d648625aaac06e837c" />
+        <div class="album__info">
+          <span class="album__title">
+            Stay There Now
+          </span>
+          <span class="album__musician">
+            The Harmonics
+          </span>
+        </div>
     </div>
-    <div class="play-controls"><i class="fas fa-fast-backward"></i><i class="far fa-play-circle"></i><i class="fas fa-fast-forward"></i></div>
+    <div class="play-controls">
+      <i class="fas fa-fast-backward"></i><i class="far fa-play-circle"></i><i class="fas fa-fast-forward"></i></div>
     <div class="play-device-controls"><i class="fas fa-volume-up"></i></div>
 </footer>
 <!--
