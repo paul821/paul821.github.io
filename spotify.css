@@ -15,7 +15,7 @@ html {
 	 height: 100%;
 }
  body {
-	 font-family: 'Lato', Arial, sans-serif;
+	 font-family: 'Gotham', Arial, sans-serif;
 	 line-height: 1.4;
 	 font-size: 14px;
 	 color: var(--main-font-color);
@@ -58,7 +58,7 @@ html {
  .link:visited, .link:focus .link:hover, .link:active {
 	 color: var(--main-font-color);
 }
- .link:hover, .link:active, .link:focus {
+ .link:hover, .link:active, .link:focus, .sidebar__main-links:hover, .sidebar__music:hover, .sidebar__playlists:hover {
 	 color: var(--main-link-active-color);
 }
  .wrapper {
