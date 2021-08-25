@@ -249,10 +249,10 @@ i {
 i:hover {
 	 color: var(--main-link-active-color);
 }
- i.fa-play-circle {
+ i.fa-play {
 	 font-size: 21px;
 }
- i.fa-play-circle:hover {
+ i.fa-play:hover {
 	 transform: scale(1.2);
 }
  .play-controls {
