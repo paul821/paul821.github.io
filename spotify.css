@@ -5,7 +5,7 @@ html {
 	 --main-link-active-color: #fff;
 	 --main-border-color: #808080 4d;
 	 --activity-bg-color: #000;
-	 --footer-height: 100px;
+	 --footer-height: 50px;
 	 --main-bg-color-dark: #202020;
 }
  * {
@@ -13,6 +13,8 @@ html {
 }
  html, body {
 	 height: 100%;
+	 padding-top:2em;
+	 padding-right:2em;
 }
  body {
 	 font-family: 'Gotham', Arial, sans-serif;
@@ -237,14 +239,14 @@ html {
  .album__musician {
 	 font-size: 13px;
 }
- i {
+i {
 	 color: var(--main-font-color);
 	 padding: 0 10px;
 	 font-size: 18px;
 	 cursor: pointer;
 	 transition: all 0.3s;
 }
- i:hover {
+i:hover {
 	 color: var(--main-link-active-color);
 }
  i.fa-play-circle {
