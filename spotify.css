@@ -58,7 +58,7 @@ html {
 	 transition: all 0.5s;
 }
 
- .link:not(sidebar) {
+ .link:not(.sidebar) {
 	 padding: 5px;
 }
 
@@ -78,6 +78,11 @@ html {
 	 padding-top:2em;
 	 padding-right:2em;
 }
+
+.modal{
+	color:black;
+}
+
  @media (min-width: 800px) {
 	 .wrapper {
 		 grid-template-columns: 200px auto;
