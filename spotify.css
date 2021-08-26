@@ -50,13 +50,18 @@ html {
 	 color: #000;
 	 border: 1px solid #fff;
 }
- .link:not(.sidebar) {
+ .link {
 	 display: inline-block;
 	 color: var(--main-font-color);
-	 padding: 5px;
+	 
 	 text-decoration: none;
 	 transition: all 0.5s;
 }
+
+ .link:not(sidebar) {
+	 padding: 5px;
+}
+
  .link:visited, .link:focus .link:hover, .link:active {
 	 color: var(--main-font-color);
 }
