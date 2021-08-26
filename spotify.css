@@ -16,12 +16,11 @@ html {
 	 
 }
  body {
-	 font-family: Montserrat, Arial, sans-serif;
+	 font-family: 'Lato', Arial, sans-serif;
 	 line-height: 1.4;
 	 font-size: 14px;
 	 color: var(--main-font-color);
-	 padding-top:2em;
-	 padding-right:2em;
+	 
 }
  img {
 	 max-width: 100%;
@@ -71,6 +70,8 @@ html {
 	 min-height: 100vh;
 	 grid-template-columns: 100%;
 	 grid-template-areas: "main" "sidebar";
+	 padding-top:2em;
+	 padding-right:2em;
 }
  @media (min-width: 800px) {
 	 .wrapper {
