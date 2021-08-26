@@ -50,7 +50,7 @@ html {
 	 color: #000;
 	 border: 1px solid #fff;
 }
- .link {
+ .link:not(.sidebar) {
 	 display: inline-block;
 	 color: var(--main-font-color);
 	 padding: 5px;
