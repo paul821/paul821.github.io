@@ -89,13 +89,13 @@ html {
 	 background: var(--activity-bg-color);
 	 grid-area: sidebar;
 }
- .sidebar li {
+ .sidebar li, .sidebar li a {
 	 line-height: 2;
 }
- .sidebar__header {
+ .sidebar__header, .sidebar__header a {
 	 margin-bottom: 5px;
 }
- .sidebar__header {
+ .sidebar__header, .sidebar__header a{
 	 text-transform: uppercase;
 	 font-weight: 300;
 	 font-size: 12px;
