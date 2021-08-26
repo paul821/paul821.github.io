@@ -268,8 +268,10 @@ i:hover {
 	 font-size: 18px;
 	 color: var(--main-highlight-color);
 	 margin-bottom: 8px;
+	 text-align:center;
 }
  .song__creator {
 	 font-size: 12px;
+	 text-align:center;
 }
  
