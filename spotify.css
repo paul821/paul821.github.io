@@ -58,7 +58,7 @@ html {
 	 transition: all 0.5s;
 }
 
- .link:not(.sidebar) {
+ .link:not(.sidebar a) {
 	 padding: 5px;
 }
 
