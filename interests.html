@@ -90,7 +90,7 @@
         <section class="main__playlists">
             <h2>Featured Lists</h2>
             <ul class="music__list">
-                <li class="music__list-item" id="photo" type="button" data-bs-toggle="modal" data-bs-target="#photo">
+                <li class="music__list-item" id="photo" type="button" data-bs-toggle="modal" data-bs-target="#photo" onClick="Play(photo)">
                   <span class="song__title">Beautiful things don't ask for attention</span>
                   <span class="song__creator">Sean Penn</span>
                   <span class="song__creator">The Secret Life of Walter Mitty</span>
@@ -748,7 +748,7 @@
     <div class="play-controls">
       <i class="fas fa-random"></i>
       <i class="fas fa-step-backward"></i>
-      <i class="fas fa-play"></i>
+      <i class="fas fa-play" onClick="playpause()"></i>
       <i class="fas fa-step-forward"></i>
       <i class="fas fa-repeat"></i>
     </div>
