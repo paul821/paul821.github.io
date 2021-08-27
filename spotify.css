@@ -201,6 +201,56 @@ html {
  .music__list-item:hover {
 	 opacity: 1 !important;
 }
+
+.music__list-item #photo {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/photo.JPG")
+		);
+	opacity:.8;
+}
+
+.music__list-item #music {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/music.JPG")
+		);
+	opacity:.8;
+}
+
+.music__list-item #writing {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/writing.JPG")
+		);
+	opacity:.8;
+}
+
+.music__list-item #baseball {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/baseball.JPG")
+		);
+	opacity:.8;
+}
+
+.music__list-item #wrestling {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/wrestling.JPG")
+		);
+	opacity:.8;
+}
+
+.music__list-item #lang {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/lang.JPG")
+		);
+	opacity:.8;
+}
+
+.music__list-item #movie {
+	background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("spotifyphotos/movie.JPG")
+		);
+	opacity:.8;
+}
+
  .activity {
 	 grid-area: social;
 	 display: none;
