@@ -43,12 +43,12 @@ repeatButton.addEventListener('click',function() {
   }
 });
 
-//let audio = document.getElementsByTagName('audio');
 
-//let volume = document.querySelector("#volume-control");
-//volume.addEventListener("change", function(e) {
-//audio.volume = e.currentTarget.value / 100;
-//})
+
+let volume = document.querySelector("#volume-control");
+volume.addEventListener("change", function(e) {
+track.volume = e.currentTarget.value / 100;
+})
 
 
 
