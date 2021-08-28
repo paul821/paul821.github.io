@@ -24,7 +24,7 @@ function Play(x)
 
 var playButton = document.getElementById("fa-play");    
 
-playbutton.addEventListener('click', function() {
+playButton.addEventListener('click', function() {
   if (track.paused) {
     track.play();
   } else {
