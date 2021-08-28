@@ -100,5 +100,19 @@ track.volume = e.currentTarget.value / 100;
 })
 
 
+document.getElementById("myinput").onmouseover = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #1DB954 0%, #1DB954 ' + value + '%, #808080 ' + value + '%, #808080 100%)'
+};
+
+document.getElementById("myinput").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #1DB954 0%, #1DB954 ' + value + '%, #808080 ' + value + '%, #808080 100%)'
+};
+
+document.getElementById("myinput").onmouseout = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #b9b5b5 0%, #b9b5b5 ' + value + '%, #808080 ' + value + '%, #808080 100%)'
+};
 
 
