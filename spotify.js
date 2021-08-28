@@ -76,7 +76,7 @@ repeatButton.addEventListener('click',function() {
     repeatButton.style.color="#b9b5b5";
   } else {
     track.loop=true;
-    repeatButton.style.color="#fff";
+    repeatButton.style.color="#1DB954";
   }
 });
 
