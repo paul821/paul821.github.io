@@ -287,6 +287,7 @@ html {
  .album__image {
 	 width: 100px;
 	 height: 100px;
+	 
 }
  .album__musician, .album__title {
 	 display: block;
