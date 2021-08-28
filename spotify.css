@@ -255,6 +255,8 @@ html {
 	 display: none;
 	 background-color: var(--activity-bg-color);
 	 padding-left: 2rem;
+	 padding-top: 2rem;
+	 padding-right: 2rem;
 }
  .activity h3 {
 	 padding-bottom:1rem;
