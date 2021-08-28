@@ -81,6 +81,10 @@ html {
 	color:black;
 }
 
+.modal-footer{
+	justify-content:right;
+}
+
  @media (min-width: 800px) {
 	 .wrapper {
 		 grid-template-columns: 200px auto;
