@@ -72,10 +72,16 @@ playButton.addEventListener('click', function() {
 var repeatButton = document.getElementById("fa-repeat");
 repeatButton.addEventListener('click',function() {
   if (track.loop=true){
-    track.loop=false;
+    track.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    });
     repeatButton.style.color="#b9b5b5";
   } else {
-    track.loop=true;
+    track.addEventListener('ended', function() {
+        this.currentTime = track.duration;
+        this.pause();
+    });
     repeatButton.style.color="#1DB954";
   }
 });
@@ -88,7 +94,8 @@ leftButton.addEventListener('click',function() {
 
 var rightButton = document.getElementById("fa-right");
 rightButton.addEventListener('click',function() {
-  track.currentTime=track.duration*0.9;
+  var time = track.duration;
+  track.currentTime=time*0.9;
   track.play();
 });
 
