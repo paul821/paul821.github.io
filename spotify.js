@@ -16,6 +16,8 @@ function Play(x)
         myAudio.src=audiolink;
         myAudio.play();
         
+        document.getElementById("albumimg").src="spotifyimages/"+encodeURIComponent(x)+".JPG";
+            
         
         //if(myAudio.paused) {
         //    myAudio.play();
