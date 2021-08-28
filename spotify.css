@@ -256,7 +256,7 @@ html {
 	 background-color: var(--activity-bg-color);
 	 padding-left: 2rem;
 }
- .activity h2 {
+ .activity h3 {
 	 padding-bottom:1rem;
 }
  @media (min-width: 1200px) {
