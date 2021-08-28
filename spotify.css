@@ -285,8 +285,8 @@ html {
 	 display: flex;
 }
  .album__image {
-	 width: 200px;
-	 height: 200px;
+	 width: 100px;
+	 height: 100px;
 	 
 }
  .album__musician, .album__title {
