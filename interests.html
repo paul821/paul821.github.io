@@ -78,7 +78,7 @@
     </aside>
     <main>
         <header class="main__header">
-            <h1>Interests</h1>
+          <h1><strong>Interests</strong></h1>
         </header>
         <nav class="main__nav">
           <a class="link is-active" href="#">Overview</a>
@@ -88,12 +88,13 @@
           <a class="link" href="https://www.youtube.com/playlist?list=PL3BC17E78DEA9CB1E" class="link">Discover</a>
           <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link">Easter egg</a></nav>
         <section class="main__playlists">
-            <h2>Featured Lists</h2>
+          <h2><strong>Featured Lists</strong></h2>
             <ul class="music__list">
                 <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#photo" onClick="Play('photo')"
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/photo.JPG); opacity: 0.8";
                     >
-                  <span class="song__title">Beautiful things don't ask for attention</span>
+                  <span class="song__title">Beautiful things</span>
+                  <span class="song__title">don't ask for attention</span>
                   <span class="song__creator">Sean Penn</span>
                   <span class="song__creator">The Secret Life of Walter Mitty</span>
                 </li>
@@ -129,7 +130,8 @@
                 </li>
                 <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#movie" onClick="Play('movie')"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/movie.JPG); opacity: 0.8">
-                  <span class="song__title">We will find a way. We always have</span>
+                  <span class="song__title">We will find a way</span>
+                  <span class="song__title">We always have</span>
                   <span class="song__creator">Cooper</span>
                   <span class="song__creator">Interstellar</span>
                 </li>
@@ -468,7 +470,7 @@
       <br>
       <br>
       <p>
-        Other stuff include:</p>
+        Other interests include:</p>
         <ul>
           <li>art (history, drawing, digital) </li>
           <li>architecture </li>
@@ -777,12 +779,12 @@
     <div class="play-controls">
       <i class="fas fa-random"></i>
       <i class="fas fa-step-backward" id="fa-left"></i>
-      <i class="fas fa-play" id="fa-play"></i>
+      <i class="fas fa-play0circle" id="fa-play"></i>
       <i class="fas fa-step-forward" id="fa-right"></i>
       <i class="fas fa-redo" id="fa-repeat"></i>
     </div>
     <div class="play-device-controls">
-      <input type="range" id="volume-control">
+      <input type="range" id="volume-control" id="myinput">
     </div>
 </footer>
 <script type="text/javascript" src="spotify.js"></script>
