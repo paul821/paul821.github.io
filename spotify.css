@@ -273,7 +273,7 @@ html {
 	 bottom: 0;
 	 grid-gap: 20px;
 	 background: var(--main-bg-color-dark);
-	 padding: 20px 20px 100px;
+	 padding: 10px 20px 100px;
 	 width: 100%;
 }
  @media (min-width: 800px) {
