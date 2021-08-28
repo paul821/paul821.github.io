@@ -294,6 +294,7 @@ html {
 }
  .album__info {
 	 padding-left: 15px;
+	 align-self: center;
 }
  .album__title {
 	 color: var(--main-highlight-color);
@@ -324,6 +325,7 @@ i:hover {
 }
  .play-device-controls {
 	 align-self: center;
+	 justify-self:center;
 }
  .song__title {
 	 font-size: 18px;
