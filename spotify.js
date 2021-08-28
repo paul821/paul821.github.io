@@ -9,13 +9,13 @@ dict['lang']='spotifyaudio/lang.mp3';
 dict['movie']='spotifyaudio/movie.mp3';
 
 var vid = {}
-vid['photo']='https://www.youtube.com/watch?v=i1l9VeVDkhE';
-vid['music']='https://www.youtube.com/watch?v=gGdGFtwCNBE';
-vid['writing']='https://www.youtube.com/watch?v=eYiDIeSk3Go';
-vid['baseball']='https://www.youtube.com/watch?v=EmTJVTTCg6k';
-vid['wrestling']='https://www.youtube.com/watch?v=bh9197p2-rc';
-vid['lang']='https://www.youtube.com/watch?v=_KzHGbpxMOY';
-vid['movie']='https://www.youtube.com/watch?v=FqAjVAf5fNA';
+vid['photo']='https://www.youtube.com/embed/i1l9VeVDkhE?controls=0&autoplay=1&mute=1';
+vid['music']='https://www.youtube.com/embed/gGdGFtwCNBE?controls=0&autoplay=1&mute=1';
+vid['writing']='https://www.youtube.com/embed/eYiDIeSk3Go?controls=0&autoplay=1&mute=1';
+vid['baseball']='https://www.youtube.com/embed/EmTJVTTCg6k?controls=0&autoplay=1&mute=1';
+vid['wrestling']='https://www.youtube.com/embed/bh9197p2-rc?controls=0&autoplay=1&mute=1';
+vid['lang']='https://www.youtube.com/embed/_KzHGbpxMOY?controls=0&autoplay=1&mute=1';
+vid['movie']='https://www.youtube.com/embed/FqAjVAf5fNA?controls=0&autoplay=1&mute=1';
 
 
 var track=document.getElementById("bgm"); 
@@ -51,6 +51,12 @@ repeatButton.addEventListener('click',function() {
   } else {
     track.loop=true;
   }
+});
+
+var leftButton = document.getElementById("fa-left");
+leftButton.addEventListener('click',function() {
+  track.currentTime=0;
+  track.play();
 });
 
 
