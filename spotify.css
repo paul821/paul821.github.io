@@ -47,7 +47,9 @@ html {
 }
  .button:hover {
 	 background: #fff;
-	 color: #000;
+	 a {
+		 color:#000;
+	 }
 	 border: 1px solid #fff;
 }
  .link {
