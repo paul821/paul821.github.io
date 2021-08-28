@@ -71,18 +71,21 @@ playButton.addEventListener('click', function() {
 
 var repeatButton = document.getElementById("fa-repeat");
 repeatButton.addEventListener('click',function() {
-  if (track.loop=true){
-    track.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-    });
-    repeatButton.style.color="#b9b5b5";
+  if (track.loop=false){
+      //make loop true
+    //track.addEventListener('ended', function() {
+    //    this.currentTime = 0;
+    //    this.play();
+    //});
+      track.loop=true;
+    repeatButton.style.color="#fff";
   } else {
-    track.addEventListener('ended', function() {
-        this.currentTime = track.duration;
-        this.pause();
-    });
-    repeatButton.style.color="#1DB954";
+      //make loop false
+    //track.addEventListener('ended', function() {
+    //    this.pause();
+    //});
+      track.loop=false;
+    repeatButton.style.color="#b9b5b5";
   }
 });
 
