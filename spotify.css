@@ -1,5 +1,5 @@
 html {
-	 --main-bg-color: #191414;
+	 --main-bg-color: #000000;
 	 --main-font-color: #b9b5b5;
 	 --main-highlight-color: #fff;
 	 --main-link-active-color: #fff;
@@ -99,9 +99,14 @@ html {
 	 background: var(--activity-bg-color);
 	 grid-area: sidebar;
 }
- .sidebar li, .sidebar li a {
+ .sidebar li, .sidebar li a, .activity li {
 	 line-height: 2;
 }
+
+.activity ul{
+	padding-left:0;
+}
+
  .sidebar__header, .sidebar__header a {
 	 margin-bottom: 5px;
 }
