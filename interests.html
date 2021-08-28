@@ -97,37 +97,37 @@
                   <span class="song__creator">Sean Penn</span>
                   <span class="song__creator">The Secret Life of Walter Mitty</span>
                 </li>
-                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#music"
+                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#music onClick="Play(music)"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/music.JPG); opacity: 0.8">
                   <span class="song__title">When the truth is, I miss you</span>
                   <span class="song__creator">Coldplay</span>
                   <span class="song__creator">Warning Sign</span>
                 </li>
-                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#writing"
+                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#writing onClick="Play(writing)"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/writing.JPG); opacity: 0.8">
                   <span class="song__title">It's the possibility of having a dream come true that makes life interesting</span>
                   <span class="song__creator">Paulo Coelho</span>
                   <span class="song__creator">The Alchemist</span>
                 </li>
-                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#baseball"
+                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#baseball onClick="Play(baseball)"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/baseball.JPG); opacity: 0.8">
                   <span class="song__title">You can't measure heart with a radar gun</span>
                   <span class="song__creator">Tom Glavine</span>
                   <span class="song__creator">Atlanta Braves</span>
                 </li>
-                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#wrestling"
+                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#wrestling onClick="Play(wrestling)"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/wrestling.JPG); opacity: 0.8">
                   <span class="song__title">It’s about the 14 years it took me to go from undesirable to undeniable</span>
                   <span class="song__creator">Cody Rhodes</span>
                   <span class="song__creator">The modern "Hard times" promo</span>
                 </li>
-                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#lang"
+                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#lang onClick="Play(lang)"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/lang.JPG); opacity: 0.8">
                   <span class="song__title">The limits of my language mean the limits of my world</span>
                   <span class="song__creator">Ludwig Wittgenstein</span>
                   <span class="song__creator">Tractatus Logico-Philosophicus</span>
                 </li>
-                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#movie"
+                <li class="music__list-item" type="button" data-bs-toggle="modal" data-bs-target="#movie onClick="Play(movie)"
                      style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(spotifyphotos/movie.JPG); opacity: 0.8">
                   <span class="song__title">We will find a way. We always have</span>
                   <span class="song__creator">Cooper</span>
@@ -476,7 +476,7 @@
     </aside>
 </div>
       
-      
+    
       
       
       
@@ -743,7 +743,7 @@
     
 <footer class="footer">
     <div class="now-playing">
-      <img class="album__image" src="https://images.unsplash.com/photo-1515233451477-90d9cd4d57ed?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=cade564aeff757d648625aaac06e837c" />
+      <iframe class="album__image" id="albumimg" frameborder="0" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ?controls=0">
         <div class="album__info">
           <span class="album__title">
             Stay There Now
@@ -756,7 +756,7 @@
     <div class="play-controls">
       <i class="fas fa-random"></i>
       <i class="fas fa-step-backward"></i>
-      <i class="fas fa-play" onClick="playpause()"></i>
+      <i class="fas fa-play" id="fa-play"></i>
       <i class="fas fa-step-forward"></i>
       <i class="fas fa-repeat"></i>
     </div>
