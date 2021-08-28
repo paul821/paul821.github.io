@@ -280,7 +280,7 @@ html {
 	 bottom: 0;
 	 grid-gap: 20px;
 	 background: var(--main-bg-color-dark);
-	 padding: 10px 20px 100px;
+	 padding: 0px 20px 100px;
 	 width: 100%;
 }
  @media (min-width: 800px) {
@@ -333,6 +333,10 @@ i:hover {
  .play-device-controls {
 	 align-self: center;
 	 justify-self:right;
+}
+
+iframe{
+	padding-top:10px;
 }
 
 #volume-control {
