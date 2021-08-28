@@ -59,6 +59,12 @@ leftButton.addEventListener('click',function() {
   track.play();
 });
 
+var rightButton = document.getElementById("fa-right");
+rightButton.addEventListener('click',function() {
+  track.currentTime=track.duration*0.9;
+  track.play();
+});
+
 
 
 let volume = document.querySelector("#volume-control");
