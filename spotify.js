@@ -77,14 +77,14 @@ repeatButton.addEventListener('click',function() {
     //    this.currentTime = 0;
     //    this.play();
     //});
-      track.loop==true;
+      track.loop=true;
     repeatButton.style.color="#fff";
   } else {
       //make loop false
     //track.addEventListener('ended', function() {
     //    this.pause();
     //});
-      track.loop==false;
+      track.loop=false;
     repeatButton.style.color="#b9b5b5";
   }
 });
