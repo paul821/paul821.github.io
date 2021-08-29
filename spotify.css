@@ -302,6 +302,7 @@ html {
  .album__info {
 	 padding-left: 15px;
 	 align-self: center;
+	 height:50%;
 }
  .album__title {
 	 color: var(--main-highlight-color);
@@ -323,16 +324,20 @@ i:hover {
 	 color: var(--main-link-active-color);
 }
  i.fa-play-circle {
-	 font-size: 30px;
+	 font-size: 40px;
+	 vertical-align: middle;
+         height: 75%;
 }
 
  .play-controls {
 	 align-self: center;
 	 justify-self: center;
+	 height:50%;
 }
  .play-device-controls {
 	 align-self: center;
 	 justify-self:right;
+	 height:calc(50% - 19px);
 }
 
 iframe{
