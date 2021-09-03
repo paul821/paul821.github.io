@@ -11,7 +11,7 @@ body {
 
 }
 
-html{
+body:before{
         background-image: url("IMG_3562.JPG");
         background-size: 100%;
         position: absolute;
