@@ -7,18 +7,16 @@ body {
   font-weight: 300;
   font-size: 1rem;
   position:relative;
+  background-color: rgba( 255, 255, 255, 0.5);
 
 }
 
-body:before{
+#bgimg{
         background-image: url("IMG_3562.JPG");
         background-size: 100%;
-        opacity: 0.5!important;
         position: absolute;
-        filter:alpha(opacity=50);
         top: 0px;
         left: 0px;
-        z-index:-1;
         content="";
 }
 
