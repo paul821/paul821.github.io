@@ -11,13 +11,14 @@ body {
 
 }
 
-#bgimg{
+html{
         background-image: url("IMG_3562.JPG");
         background-size: 100%;
         position: absolute;
         top: 0px;
         left: 0px;
         content="";
+        opacity:0.5;
 }
 
 p {
