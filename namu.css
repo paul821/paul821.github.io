@@ -150,6 +150,7 @@ body {
     font-size: 1.25em;
     margin-left: 14px;
   display:block;
+  margin-bottom:12px;
 }
 
 #toc-indent:first-of-type {
