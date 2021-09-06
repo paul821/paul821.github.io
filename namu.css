@@ -25,6 +25,10 @@ html{
   text-decoration:none;
 }
 
+.breadcrumb-item::before{
+  color:white;
+}
+
 
 a {
       text-decoration: none;
