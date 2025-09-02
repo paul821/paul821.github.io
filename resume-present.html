@@ -674,7 +674,7 @@
         const versionData = resumeVersions[version];
         
         // Update text content
-        document.getElementById('coursework').innerHTML = `<strong>GPA:</strong> 3.7/4.0; Major GPA: 3.8/4.0; Dean's List recipient (4x); SAT: 1580/1600</li><li class="coursework">${versionData.coursework}`;
+        document.getElementById('coursework').textContent = versionData.coursework;
         
         const techSkillsElement = document.getElementById('technicalSkills');
         if (techSkillsElement) {
