@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Resume | Paul Kim</title>
+  <meta charset="utf-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Heebo:400,500,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <style>
+    body {
+      font-family: 'Heebo', 'Times New Roman', serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .resume-content {
+      padding: 2.5rem;
+      line-height: 1.4;
+    }
+
+    .resume-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .contact-info a {
+      color: #000;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .contact-info a:hover {
+      background: rgba(78, 42, 132, 0.1);
+      color: #4E2A84;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(78, 42, 132, 0.3);
+    }
+
+    .divider {
+      margin: 0 0.5rem;
+      color: #666;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #000;
+      color: #000;
+    }
+
+    .entry {
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .entry:hover {
+      transform: translateX(5px);
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.25rem;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      color: #000;
+      font-size: 0.95rem;
+      flex: 1;
+    }
+
+    .entry-date {
+      font-size: 0.85rem;
+      color: #000;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+
+    .entry-subtitle {
+      font-size: 0.9rem;
+      color: #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlights {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .highlights li {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    .highlights li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.7rem;
+      line-height: 1.4;
+    }
+
+    .highlights li:hover {
+      color: #4E2A84;
+      transform: translateX(3px);
+    }
+
+    .education-details {
+      margin-bottom: 0.5rem;
+    }
+
+    .gpa-info, .coursework, .technical-skills {
+      font-size: 0.9rem;
+      color: #000;
+    }
+
+    .additional-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .info-row {
+      font-size: 0.9rem;
+      color: #000;
+    }
+
+    .info-label {
+      font-weight: 600;
+      display: inline-block;
+      min-width: 120px;
+    }
+
+    /* Resume Version Toggle */
+    .resume-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 0.75rem;
+      z-index: 10;
+    }
+
+    .toggle-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      background: white;
+    }
+
+    .toggle-icon:hover {
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+
+    .toggle-icon.active {
+      transform: scale(1.15);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .toggle-icon.consulting {
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+      color: white;
+    }
+
+    .toggle-icon.quant {
+      background: linear-gradient(135deg, #166534, #22c55e);
+      color: white;
+    }
+
+    .toggle-icon.data {
+      background: linear-gradient(135deg, #ea580c, #f97316);
+      color: white;
+    }
+
+    .toggle-label {
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.9);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      margin-right: 0.75rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .toggle-label::after {
+      content: '';
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-left-color: rgba(0,0,0,0.9);
+    }
+
+    .toggle-icon:hover .toggle-label {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%) translateX(-5px);
+    }
+
+    /* Icon SVGs */
+    .icon-consulting {
+      width: 24px;
+      height: 24px;
+    }
+
+    .icon-quant {
+      width: 24px;
+      height: 24px;
+    }
+
+    .icon-data {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Fade transition for content changes */
+    .resume-content {
+      transition: opacity 0.3s ease;
+    }
+
+    .resume-content.fading {
+      opacity: 0.7;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .resume-container {
+        margin: 1rem;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      
+      .resume-content {
+        padding: 1.5rem;
+      }
+      
+      .resume-toggle {
+        top: 0.5rem;
+        right: 0.5rem;
+        gap: 0.5rem;
+      }
+      
+      .toggle-icon {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .entry-date {
+        margin-left: 0;
+        margin-top: 0.25rem;
+      }
+    }
+
+    /* Hidden sections for different resume versions */
+    .resume-section {
+      display: block;
+    }
+
+    .resume-section.hidden {
+      display: none;
+    }
+
+    /* Specific styles for different versions */
+    .version-consulting .technical-skills-detailed {
+      display: none;
+    }
+
+    .version-quant .leadership-general {
+      display: none;
+    }
+
+    .version-data .consulting-specific {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container-fluid" id="navbar">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="color:#4E2A84">Chanyeol Paul Kim</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="profile.html" style="color:#4E2A84">Profile</a>
+              <a class="nav-link" href="#" style="color:#4E2A84">Resume</a>
+              <a class="nav-link" href="works.html" style="color:#4E2A84">Works</a>
+              <a class="nav-link" href="https://www.instagram.com/publicly.personal/" style="color:#4E2A84">Arts</a>
+              <a class="nav-link" href="interests.html" style="color:#4E2A84">Interests</a>
+            </div>
+          </div>
+          <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html" style="color:#4E2A84; text-decoration:none">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page" style="color:#4E2A84">Resume</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="resume-container" id="resumeContainer">
+      <!-- Resume Version Toggle -->
+      <div class="resume-toggle">
+        <div class="toggle-icon consulting active" data-version="consulting">
+          <div class="toggle-label">Consulting</div>
+          <svg class="icon-consulting" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            <path d="M15.5 12c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5m0-2C13.57 10 12 11.57 12 13.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5S17.43 10 15.5 10z"/>
+          </svg>
+        </div>
+        
+        <div class="toggle-icon quant" data-version="quant">
+          <div class="toggle-label">Quant/Finance</div>
+          <svg class="icon-quant" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3,13H5V18H3V13M8,8H10V18H8V8M13,3H15V18H13V3M18,8H20V18H18V8M3,20H21V22H3V20Z"/>
+          </svg>
+        </div>
+        
+        <div class="toggle-icon data" data-version="data">
+          <div class="toggle-label">Data</div>
+          <svg class="icon-data" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11,2V22C5.9,21.5 2,17.2 2,12S5.9,2.5 11,2M13,2V11H22C21.5,6.2 17.8,2.5 13,2M13,13V22C17.7,21.5 21.5,17.8 22,13H13Z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="resume-content" id="resumeContent">
+        <!-- Header -->
+        <div class="resume-header">
+          <div class="name">Chanyeol Paul Kim</div>
+          <div class="contact-info">
+            <a href="mailto:paulkim2024@u.northwestern.edu">paulkim2024@u.northwestern.edu</a>
+            <span class="divider">|</span>
+            <a href="tel:+1-224-285-5247">+1-224-285-5247</a>
+            <span class="divider">|</span>
+            <a href="https://github.com/paul821" target="_blank">github.com/paul821</a>
+            <span class="divider">|</span>
+            <a href="https://linkedin.com/in/paul821" target="_blank">linkedin.com/in/paul821</a>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Northwestern University – Evanston, IL</div>
+              <div class="entry-date">Jun 2026 (Expected)</div>
+            </div>
+            <div class="entry-subtitle education-details">Bachelor of Science: Industrial Engineering, Economics, Kellogg Certificate in Managerial Analytics</div>
+            <ul class="highlights">
+              <li class="gpa-info"><strong>GPA:</strong> 3.7/4.0; Major GPA: 3.8/4.0; Dean's List recipient (4x); SAT: 1580/1600</li>
+              <li class="coursework" id="coursework">Coursework: Industrial Economics, Competitive Strategy, Organizational Behavior, Analytics for Strategy, Optimization</li>
+              <li class="technical-skills-detailed resume-section" id="technicalSkills">Technical Skills: SQL, Excel, Data Analysis – Advanced; Coding, Financial Modeling – Intermediate</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Professional Experiences -->
+        <div class="section">
+          <div class="section-title">Professional Experiences</div>
+          
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Business Development Intern, Next Play Games – Remote</div>
+              <div class="entry-date">May 2025 – Present</div>
+            </div>
+            <ul class="highlights">
+              <li>Conducted usability analysis and pitched 3 feature enhancements projected to boost engagement by 20–30% in a sports game app</li>
+              <li>Proposed $400 AI referee feature deployment plan and built 3-phase implementation roadmap and 5 milestones across 4 teams</li>
+              <li>Launched 4-person research initiative on AI in sports tech to profile 10+ startups and deliver strategic innovation recommendations</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Consulting Business Analyst, Monitor Deloitte – Seoul, KR</div>
+              <div class="entry-date">May 2024 – Jun 2024</div>
+            </div>
+            <ul class="highlights">
+              <li>Supported $9B cross-border M&A integration, coordinating 120+ post-merger client workshops with Deloitte US and PwC</li>
+              <li>Managed daily swim lane updates across 10 modules and synthesized bilingual progress reports for client and senior managers</li>
+              <li>Created progress tracking systems using Excel pivot tables and PowerPoint diagrams, facilitating alignment across 3 companies</li>
+              <li>Documented and translated biweekly engineering module meetings, improving knowledge sharing across 3 engineering divisions</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Data Management Intern, Sievo – Chicago, IL</div>
+              <div class="entry-date">Jun 2022 – Aug 2022</div>
+            </div>
+            <ul class="highlights">
+              <li>Streamlined client spend data classification and consolidation process by leveraging T-SQL, Qlik, Jira, and internal dashboards</li>
+              <li>Oversaw monthly data import workflows for 3 clients, ensuring 100% delivery compliance via Jira, PowerBI, and MS SQL</li>
+              <li>Triaged weekly client ticket queues and allocated unclaimed tasks to 5 team members, maintaining 100% first-response rates</li>
+              <li>Revived stalled pilot integration of AI classification tool, raising tail spend classification accuracy by 30%+ for 4 enterprise clients</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="section">
+          <div class="section-title">Leadership</div>
+          
+          <div class="entry resume-section quant-specific" id="optionsProject">
+            <div class="entry-header">
+              <div class="entry-title">Team Leader, IEMS 373 Options Project – Evanston, IL</div>
+              <div class="entry-date">Apr 2025 – Jun 2025</div>
+            </div>
+            <ul class="highlights">
+              <li>Leveraged industry dynamics and macro catalysts to develop a long strangle thesis on FedEx backed by IV and premium analysis</li>
+              <li>Applied LSTM-driven price and volatility forecasts and Black-Scholes Model to refine strike selection based on breakeven logic</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Analytics Lead, IEMS Client Project Challenge – Evanston, IL</div>
+              <div class="entry-date">Apr 2025 – Jun 2025</div>
+            </div>
+            <ul class="highlights">
+              <li id="simulationDescription">Engineered 14-step mortgage process simulation for top-5 Mexican homebuilder to identify UX gaps and operational inefficiencies</li>
+              <li id="staffingOptimization">Presented optimized staffing allocation to client leadership, boosting throughput by 30.7% and cutting potential costs by 9.25%</li>
+              <li>Visualized CRM data using Python/Excel to pinpoint bottlenecks; drove 10.2% throughput gain via arrival smoothing mechanisms</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Fire Direction Control Squad Leader, Republic of Korea Army – Seoul, KR</div>
+              <div class="entry-date">Sep 2022 – Mar 2024</div>
+            </div>
+            <ul class="highlights">
+              <li>Led a 4-person artillery squad as HVCO, overseeing classified geospatial data imports and manual calculations for firing accuracy</li>
+              <li>Prepared weekly FDC team training resources and achieved 1st place out of 20 squads in annual brigade performance evaluation</li>
+              <li>Authored a 50+ page tactical manual and organized 2-month daily onboarding sessions, minimizing disruption ahead of discharge</li>
+            </ul>
+          </div>
+
+          <div class="entry resume-section data-specific" id="epilepsyProject">
+            <div class="entry-header">
+              <div class="entry-title">Project Leader, Epilepsy Foundation of Greater Chicago – Chicago, IL</div>
+              <div class="entry-date">Oct 2021 – Feb 2022</div>
+            </div>
+            <ul class="highlights">
+              <li>Controlled weekly client communication and led 5-person team to clean data from 366 Illinois schools for epilepsy program rollout</li>
+              <li>Constructed and published an interactive Tableau dashboard with geolocation filters to enable policymakers to track compliance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research -->
+        <div class="section">
+          <div class="section-title">Research</div>
+          
+          <div class="entry resume-section data-specific" id="buehlerResearch">
+            <div class="entry-header">
+              <div class="entry-title">Research Assistant, Buehler Center for Health Policy and Economics – Chicago, IL</div>
+              <div class="entry-date">Jun 2025 – Present</div>
+            </div>
+            <ul class="highlights">
+              <li>Designed pipelines for 1,600+ census predictors across 76 tract-years to ensure integrity of community health engagement outcome</li>
+              <li>Applied Elastic Net with filtering and bootstrap stability, raising model AUC by 47% and trimming predictors to 10 stable features</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-title">Undergraduate Researcher, Northwestern University Dept. of Industrial Engineering – Evanston, IL</div>
+              <div class="entry-date">May 2025 – Present</div>
+            </div>
+            <ul class="highlights">
+              <li>Extended Python-based <span id="epidemicModel">epidemic model</span> to gauge effectiveness of public health policies including quarantine and vaccination</li>
+              <li id="modelAccuracy">Learned and implemented advanced model design techniques in 2 weeks, resulting in 64x higher accuracy than previous version</li>
+            </ul>
+          </div>
+
+          <div class="entry resume-section consulting-economics" id="economicsResearch">
+            <div class="entry-header">
+              <div class="entry-title">Research Assistant, Northwestern University Dept. of Economics – Evanston, IL</div>
+              <div class="entry-date">Oct 2024 – Dec 2024</div>
+            </div>
+            <ul class="highlights">
+              <li>Collected qualitative and quantitative FactSet macro-financial data to analyze Federal Reserve policy impact on corporate debt</li>
+              <li>Redesigned debt classification framework, consolidating categories to eliminate negative values and enable valid visualizations</li>
+              <li>Generated stratified plots of debt structure by asset size in Python for empirical 5-year comparison to verify predicted trend</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="section">
+          <div class="section-title">Additional Information</div>
+          <div class="additional-info">
+            <div class="info-row">
+              <span class="info-label">Languages:</span>
+              English, Korean (Native); Chinese (Proficient); Spanish, French, German, Japanese (Basic)
+            </div>
+            <div class="info-row resume-section consulting-general" id="technicalSkillsSection">
+              <span class="info-label">Technical skills:</span>
+              SQL, Excel, Data Analysis – Advanced; Coding, Financial Modeling – Intermediate
+            </div>
+            <div class="info-row">
+              <span class="info-label">Extracurriculars:</span>
+              Korean at Northwestern, Asian American InterVarsity, Intramurals Softball and Ultimate Frisbee (2nd Place)
+            </div>
+            <div class="info-row">
+              <span class="info-label">Interests:</span>
+              Photography, Music Production, Baseball, Pro Wrestling, Backpacking, Impressionist Art
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid" style="margin-top: 3rem;">
+    <div class="row">
+      <p class="col-sm-4"> Since 2020, Paul Kim</p>
+      <p class="col-sm-4">
+        <a href="https://www.linkedin.com/in/paul821/">LinkedIn</a>
+      </p>
+      <p class="col-sm-4"><a href="mailto:paulkim2024@u.northwestern.edu">paulkim2024@u.northwestern.edu</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Resume version data
+    const resumeVersions = {
+      consulting: {
+        coursework: "Coursework: Industrial Economics, Competitive Strategy, Organizational Behavior, Analytics for Strategy, Optimization",
+        technicalSkills: "Technical Skills: SQL, Excel, Data Analysis – Advanced; Coding, Financial Modeling – Intermediate",
+        technicalSkillsSection: "SQL, Excel, Data Analysis – Advanced; Coding, Financial Modeling – Intermediate",
+        simulationDescription: "Engineered 14-step mortgage process simulation for top-5 Mexican homebuilder to identify UX gaps and operational inefficiencies",
+        staffingOptimization: "Presented optimized staffing allocation to client leadership, boosting throughput by 30.7% and cutting potential costs by 9.25%",
+        epidemicModel: "epidemic model",
+        modelAccuracy: "Learned and implemented advanced model design techniques in 2 weeks, resulting in 64x higher accuracy than previous version",
+        showSections: ['consulting-general', 'consulting-economics'],
+        hideSections: ['quant-specific', 'data-specific', 'technical-skills-detailed']
+      },
+      quant: {
+        coursework: "Coursework: Financial Engineering, Analytics for Strategy, Stochastic Models, Statistics for Data Analysis, Optimization",
+        technicalSkills: "Technical Skills: Python, R, SQL, Excel – Advanced; PyTorch, Java, AMPL - Intermediate; MATLAB, AWS, Stata - Basic",
+        technicalSkillsSection: "Python, R, SQL, Excel – Advanced; PyTorch, Java, AMPL - Intermediate; MATLAB, AWS, Stata - Basic",
+        simulationDescription: "Engineered 14-step discrete-event mortgage simulation for top-5 Mexican homebuilder to identify operational inefficiencies",
+        staffingOptimization: "Presented OptQuest-based staffing plan to client leadership, boosting throughput by 30.7% and cutting potential costs by 9.25%",
+        epidemicModel: "SIR epidemic model",
+        modelAccuracy: "Employed gradient-based optimizers (CG, BFGS, L-BFGS-B) via PyTorch to calibrate and attain 64x accuracy improvement",
+        showSections: ['quant-specific', 'technical-skills-detailed'],
+        hideSections: ['data-specific', 'consulting-economics']
+      },
+      data: {
+        coursework: "Coursework: Financial Engineering, Analytics for Strategy, Stochastic Models, Statistics for Data Analysis, Optimization",
+        technicalSkills: "Technical Skills: Python, R, SQL, Excel – Advanced; PyTorch, Java, AMPL - Intermediate; Git, CI/CD, AWS, Stata - Basic",
+        technicalSkillsSection: "Python, R, SQL, Excel – Advanced; PyTorch, Java, AMPL - Intermediate; Git, CI/CD, AWS, Stata - Basic",
+        simulationDescription: "Engineered 14-step discrete-event mortgage simulation for top-5 Mexican homebuilder to identify operational inefficiencies",
+        staffingOptimization: "Presented OptQuest-based staffing plan to client leadership, boosting throughput by 30.7% and cutting potential costs by 9.25%",
+        epidemicModel: "SIR epidemic model",
+        modelAccuracy: "Employed gradient-based optimizers (CG, BFGS, L-BFGS-B) via PyTorch to calibrate and attain 64x accuracy improvement",
+        showSections: ['data-specific', 'technical-skills-detailed'],
+        hideSections: ['quant-specific', 'consulting-economics']
+      }
+    };
+
+    // Initialize
+    let currentVersion = 'consulting';
+
+    // Toggle icon click handlers
+    document.querySelectorAll('.toggle-icon').forEach(icon => {
+      icon.addEventListener('click', function() {
+        const version = this.dataset.version;
+        if (version !== currentVersion) {
+          switchResumeVersion(version);
+        }
+      });
+    });
+
+    function switchResumeVersion(version) {
+      const content = document.getElementById('resumeContent');
+      const container = document.getElementById('resumeContainer');
+      
+      // Add fading effect
+      content.classList.add('fading');
+      
+      setTimeout(() => {
+        // Update active toggle icon
+        document.querySelectorAll('.toggle-icon').forEach(icon => {
+          icon.classList.remove('active');
+        });
+        document.querySelector(`[data-version="${version}"]`).classList.add('active');
+        
+        // Update content based on version
+        const versionData = resumeVersions[version];
+        
+        // Update text content
+        document.getElementById('coursework').innerHTML = `<strong>GPA:</strong> 3.7/4.0; Major GPA: 3.8/4.0; Dean's List recipient (4x); SAT: 1580/1600</li><li class="coursework">${versionData.coursework}`;
+        
+        const techSkillsElement = document.getElementById('technicalSkills');
+        if (techSkillsElement) {
+          techSkillsElement.textContent = versionData.technicalSkills;
+        }
+        
+        const techSkillsSectionElement = document.getElementById('technicalSkillsSection');
+        if (techSkillsSectionElement) {
+          techSkillsSectionElement.innerHTML = `<span class="info-label">Technical skills:</span> ${versionData.technicalSkillsSection}`;
+        }
+        
+        document.getElementById('simulationDescription').textContent = versionData.simulationDescription;
+        document.getElementById('staffingOptimization').textContent = versionData.staffingOptimization;
+        document.getElementById('epidemicModel').textContent = versionData.epidemicModel;
+        document.getElementById('modelAccuracy').textContent = versionData.modelAccuracy;
+        
+        // Show/hide sections
+        document.querySelectorAll('.resume-section').forEach(section => {
+          section.style.display = 'block';
+        });
+        
+        versionData.hideSections.forEach(sectionClass => {
+          document.querySelectorAll(`.${sectionClass}`).forEach(section => {
+            section.style.display = 'none';
+          });
+        });
+        
+        // Update container class for version-specific styling
+        container.className = container.className.replace(/version-\w+/g, '');
+        container.classList.add(`version-${version}`);
+        
+        currentVersion = version;
+        
+        // Remove fading effect
+        content.classList.remove('fading');
+      }, 150);
+    }
+
+    // Initialize with consulting version
+    switchResumeVersion('consulting');
+  </script>
+
+</body>
+
+</html>
